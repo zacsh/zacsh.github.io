@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zac</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding: 3rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-photo {
+      flex: 0 0 140px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--bg-alt);
+      border: 2px solid var(--border);
+      display: block;
+    }
+
+    .hero-photo-placeholder {
+      flex: 0 0 140px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: var(--bg-alt);
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .hero-text h1 {
+      margin: 0 0 0.4rem;
+      font-size: 2.4rem;
+    }
+
+    .hero-text .tagline {
+      color: var(--text-muted);
+      margin: 0 0 1rem;
+      font-size: 1rem;
+    }
+
+    .hero-text .bio {
+      margin: 0;
+      font-size: 0.97rem;
+      line-height: 1.7;
+      max-width: 540px;
+    }
+
+    .page-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .page-link-card {
+      display: block;
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.15s ease;
+    }
+
+    .page-link-card:hover {
+      border-color: var(--accent);
+    }
+
+    .page-link-card .card-label {
+      font-size: 0.8rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-link-card h3 {
+      margin: 0 0 0.3rem;
+      font-size: 1.05rem;
+    }
+
+    .page-link-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="index.html">Zac Shi</a>
+      <div class="links">
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="drum-major.html">Drum Major</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-photo-placeholder">photo</div>
+      <div class="hero-text">
+        <h1>Zac</h1>
+        <p class="bio">
+          I'm a student at UCLA studying mathematics and data science engineering. I am an undergraduate researcher with the Varney Geospace Research Group, where my work is in ionospheric physics. 
+          As of 2026, I serve as president of the Undergraduate Mathematics Student Association at UCLA. I also am involved in the drum major community. 
+        </p>
+      </div>
+    </div>
+
+    <div class="page-links">
+      <a class="page-link-card" href="research.html">
+        <div class="card-label">Research</div>
+        <h3>Ionospheric Physics</h3>
+        <p>Evaluating HIDRA model electron temperature predictions against RISR-N radar observations.</p>
+      </a>
+      <a class="page-link-card" href="drum-major.html">
+        <div class="card-label">Performance</div>
+        <h3>Drum Major</h3>
+        <p>World Cup, Edinburgh Military Tattoo, Rose Parade, 5x California state champion.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Zac
+  </footer>
+</body>
+</html>
